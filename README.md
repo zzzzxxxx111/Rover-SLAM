@@ -32,7 +32,7 @@ Download "voc_binary_tartan_8u_6.gz", and unzip in ROVER-SLAM/Vocabulary/
 
 Clone the repository:
 ```
-git clone https://github.com/zzzzxxxx111/SLslam.git
+git clone https://github.com/zzzzxxxx111/Rover-SLAM.git
 ```
 
 
