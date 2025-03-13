@@ -22,11 +22,13 @@ Required by g2o (see below). Download and install instructions can be found at: 
 
 We provide some examples to process input of a monocular, monocular-inertial, stereo, stereo-inertial or RGB-D camera using ROS. Building these examples is optional. These have been tested with ROS Melodic under Ubuntu 18.04.
 
+
+
 ## Download Examples Folder
-Download "Examples" Folder zip, and unzip in ROVER-SLAM/
+Download "Examples" Folder zip from [url](https://pan.baidu.com/s/1dd6k_Gf8mEjbiyli31_Yeg?pwd=p5y8) and unzip in ROVER-SLAM/
 
 ## Download Dbow File
-Download "voc_binary_tartan_8u_6.gz", and unzip in ROVER-SLAM/Vocabulary/
+Download "voc_binary_tartan_8u_6.zip" from [url](https://pan.baidu.com/s/1dd6k_Gf8mEjbiyli31_Yeg?pwd=p5y8), and unzip in ROVER-SLAM/Vocabulary/
 
 # Building Rover-SLAM library and examples
 
