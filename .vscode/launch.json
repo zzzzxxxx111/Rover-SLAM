@@ -1,0 +1,99 @@
+{
+    "version": "0.2",
+    "configurations": [
+        
+        {
+            "name": "Monocular",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular/mono_euroc", // 指定可执行文件路径
+            "args": [
+                "/media/xiao/data3/learning-slam/Rover-slam/Vocabulary/voc_binary_tartan_8u_6.yml.gz",
+                "Examples/Monocular/EuRoC.yaml",
+                "/media/xiao/data3/slamdataset/euroc/V202",
+                "/media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular/EuRoC_TimeStamps/V202.txt",
+                
+            ], // 可选：指定运行时的参数
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+
+        {
+            "name": "Monocular-Inertial",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular-Inertial/mono_inertial_euroc", 
+            "args": [
+                "/media/xiao/data3/learning-slam/ORB_SLAM3_detailed_comments/Vocabulary/voc_binary_tartan_8u_6.yml.gz",
+                "Examples/Monocular-Inertial/EuRoC.yaml",
+                "/media/xiao/data3/slamdataset/euroc/V203",
+                "/media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular-Inertial/EuRoC_TimeStamps/V203.txt"
+            ], 
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Monocular-Inertial-tum",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular-Inertial/mono_inertial_tum_vi", // 指定可执行文件路径
+            "args": [
+                "/media/xiao/data3/learning-slam/Rover-slam/Vocabulary/voc_binary_tartan_8u_6.yml.gz",
+                "Examples/Monocular-Inertial/TUM_512.yaml",
+                "/media/xiao/data3/slamdataset/dataset-corridor3_512_16/mav0/cam0/data",
+                "Examples/Monocular-Inertial/TUM_TimeStamps/dataset-corridor3_512.txt",
+                "Examples/Monocular-Inertial/TUM_IMU/dataset-corridor3_512.txt",
+                "dataset-corridor3_512_monoi"
+            ], // 可选：指定运行时的参数
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "stereo-Inertial",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/media/xiao/data3/learning-slam/ORB_SLAM3_detailed_comments/Examples/Stereo-Inertial/stereo_inertial_euroc", // 指定可执行文件路径
+            "args": [
+                "/media/xiao/data3/learning-slam/ORB_SLAM3_detailed_comments/Vocabulary/voc_binary_tartan_8u_6.yml.gz",
+                "Examples/Stereo-Inertial/EuRoC.yaml",
+                "/media/xiao/data3/slamdataset/euroc/V203",
+                "/media/xiao/data3/learning-slam/ORB_SLAM3_detailed_comments/Examples/Stereo/EuRoC_TimeStamps/V203.txt",
+                "V203_si"
+            ], // 可选：指定运行时的参数
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
