@@ -74,9 +74,7 @@ make -j12
 ```      
 The rest of the operations are the same as ORB-SLAM3
 
-Here’s an English version of the acknowledgments section for your `README` file:
 
----
 
 # Acknowledgments
 
