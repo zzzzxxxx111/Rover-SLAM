@@ -15,7 +15,7 @@ We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization
 Required by g2o (see below). Download and install instructions can be found at: http://eigen.tuxfamily.org. **Required at least 3.1.0**.
 
 ## ONNXRuntime
-**Required onnxruntime-linux-x64-gpu-1.16.3**
+**Required onnxruntime-linux-x64-gpu-1.16.3** and Modify line of the CmakeLists.txt to the current location of ONNXRuntime library.
 
 
 ## ROS (optional)
@@ -49,12 +49,12 @@ make -j12
 
 # Running 
 
-## Euroc-monocluar:
+## Euroc-Monocluar:
 ```
 ./Examples/Monocular/mono_euroc  Vocabulary/voc_binary_tartan_8u_6.yml.gz Examples/Monocular/EuRoC.yaml /media/xiao/data3/slamdataset/euroc/V202 /media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular/EuRoC_TimeStamps/V202.txt
 ```
 
-## Euroc-monocluar-Inerial:
+## Euroc-Monocluar-Inerial:
 
 ```
 ./Examples/Monocular-Inertial/mono_inertial_euroc  Vocabulary/voc_binary_tartan_8u_6.yml.gz Examples/Monocular-Inertial/EuRoC.yaml /media/xiao/data3/slamdataset/euroc/V203 media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular-Inertial/EuRoC_TimeStamps/V203.txt
@@ -67,7 +67,7 @@ make -j12
 ```
 ./Examples/Monocular-Inertial/mono_inertial_tum_vi Vocabulary/voc_binary_tartan_8u_6.yml.gz Examples/Monocular-Inertial/TUM_512.yaml /media/xiao/data3/slamdataset/dataset-corridor3_512_16/mav0/cam0/data Examples/Monocular-Inertial/TUM_TimeStamps/dataset-corridor3_512.txt Examples/Monocular-Inertial/TUM_IMU/dataset-corridor3_512.txt dataset-corridor3_512_monoi
 ```
-## Euroc -Stereo-Inertial
+## Euroc-Stereo-Inertial
 
 ```
  ./Examples/Stereo-Inertial/stereo_inertial_euroc /media/xiao/data3/learning-slam/ORB_SLAM3_detailed_comments/Vocabulary/voc_binary_tartan_8u_6.yml.gz Examples/Stereo-Inertial/EuRoC.yaml /media/xiao/data3/slamdataset/euroc/V203 /media/xiao/data3/learning-slam/ORB_SLAM3_detailed_comments/Examples/Stereo/EuRoC_TimeStamps/V203.txt V203_si
