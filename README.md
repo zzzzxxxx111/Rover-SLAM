@@ -1,7 +1,11 @@
 # A real-time, robust and versatile visual-SLAM framework based on deep learning networks
 
 # Prerequisites
-We have tested the library in **Ubuntu 20.04**, but it should be easy to compile in other platforms. A powerful computer (e.g. i7) will ensure real-time performance and provide more stable and accurate results.
+We have tested the library in **Ubuntu 20.04**, with the following hardware and software configurations:
+
+- **CPU**: Intel Core i7-10700K
+- **GPU**: NVIDIA GeForce RTX 3080
+- **CUDA Version**: 11.8
 
 
 
@@ -15,7 +19,7 @@ We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization
 Required by g2o (see below). Download and install instructions can be found at: http://eigen.tuxfamily.org. **Required at least 3.1.0**.
 
 ## ONNXRuntime
-**Required onnxruntime-linux-x64-gpu-1.16.3** and Modify line of the CmakeLists.txt to the current location of ONNXRuntime library.
+**Required onnxruntime-linux-x64-gpu-1.16.3** and Modify line 63 of the CmakeLists.txt to the current location of ONNXRuntime library.
 
 
 ## ROS (optional)
@@ -25,10 +29,10 @@ We provide some examples to process input of a monocular, monocular-inertial, st
 
 
 ## Download Examples Folder
-Download "Examples" Folder zip from [url](https://pan.baidu.com/s/1dd6k_Gf8mEjbiyli31_Yeg?pwd=p5y8) and unzip in ROVER-SLAM/
+Download ["Examples" ](https://pan.baidu.com/s/1dd6k_Gf8mEjbiyli31_Yeg?pwd=p5y8) and unzip in ROVER-SLAM/ .
 
 ## Download Dbow File
-Download "voc_binary_tartan_8u_6.zip" from [url](https://pan.baidu.com/s/1dd6k_Gf8mEjbiyli31_Yeg?pwd=p5y8), and unzip in ROVER-SLAM/Vocabulary/
+Download ["voc_binary_tartan_8u_6.zip"](https://pan.baidu.com/s/1dd6k_Gf8mEjbiyli31_Yeg?pwd=p5y8), and unzip in ROVER-SLAM/Vocabulary/ .
 
 # Building Rover-SLAM library and examples
 
@@ -87,4 +91,7 @@ The completion of this project would not have been possible without the support 
   
 
 3. **SP-Loop**  
-   
+
+4. **ORB_SLAM3_detailed_comments**  
+
+5. **SuperPoint_SLAM**
