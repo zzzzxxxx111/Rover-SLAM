@@ -225,6 +225,9 @@ std::vector<Ort::Value> LightGlueDecoupleOnnxRunner::Matcher_Inference(std::vect
             }
         }
 
+        delete[] kpts0_data;
+        delete[] kpts1_data;
+
         //std::cout << "[INFO] LightGlueDecoupleOnnxRunner Matcher inference finish ..." << std::endl;
         //std::cout << "[INFO] Matcher inference cost time : " << diff << "ms" << std::endl;
         return output_tensor;
@@ -314,6 +317,9 @@ std::vector<Ort::Value> LightGlueDecoupleOnnxRunner::Matcher_Inference(std::vect
                 std::cerr << "[ERROR] Inference output tensor is not a tensor or don't have value" << std::endl;
             }
         }
+
+        delete[] kpts0_data;
+        delete[] kpts1_data;
 
         //std::cout << "[INFO] LightGlueDecoupleOnnxRunner Matcher inference finish ..." << std::endl;
         std::cout << "[INFO] Matcher inference cost time : " << diff << "ms" << std::endl;

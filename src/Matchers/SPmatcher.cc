@@ -406,6 +406,10 @@ int SPmatcher::MatchingPoints_onnx(std::vector<cv::Point2f> kpts0, std::vector<c
     // std::vector<int> vnMatches12;
     // vnMatches12 = std::vector<int>(normal_kpts0.size(), -1);
     size = featureMatcher->Matcher_PostProcess_fused(output, kpts0 , kpts1, vnMatches12);
+    
+    delete[] descriptors_data0;
+    delete[] descriptors_data1;
+    
     return size;
 }
 
@@ -450,6 +454,10 @@ int SPmatcher::MatchingPoints_onnx(std::vector<cv::KeyPoint> kpts0, const std::v
     // std::vector<int> vnMatches12;
     // vnMatches12 = std::vector<int>(normal_kpts0.size(), -1);
     int size  = featureMatcher->Matcher_PostProcess_fused(output, kpts_pf0 , kpts_pf1, vnMatches12);
+
+    delete[] descriptors_data0;
+    delete[] descriptors_data1;
+
     return size;
 }
 
@@ -528,6 +536,10 @@ int SPmatcher::MatchingPoints_onnx(Frame &f1, Frame &f2, vector<int> &vnMatches1
     std::vector<Ort::Value> output = featureMatcher->Matcher_Inference(normal_kpts1, normal_kpts2, descriptors_data1, descriptors_data2);
     std::pair<std::vector<cv::Point2f>, std::vector<cv::Point2f>> output_end;
     int size  = featureMatcher->Matcher_PostProcess_fused(output, kpts1 , kpts2, vnMatches12);
+
+    delete[] descriptors_data1;
+    delete[] descriptors_data2;
+    
     // if(outlier_rejection){
     //     std::vector<uchar> inliers;
     //     cv::findFundamentalMat(output_end.first, output_end.second, cv::FM_RANSAC, 3, 0.99, inliers);
