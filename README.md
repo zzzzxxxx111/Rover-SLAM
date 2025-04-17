@@ -10,16 +10,16 @@ We have tested the library in **Ubuntu 20.04**, with the following hardware and 
 
 
 ## Pangolin
-We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization and user interface. Dowload and install instructions can be found at: https://github.com/stevenlovegrove/Pangolin.
+We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization and user interface. Download and install instructions can be found at: https://github.com/stevenlovegrove/Pangolin.
 
 ## OpenCV
-**Required at leat 3.0. Tested with OpenCV 3.4.1**.
+**Required at least 3.0. Tested with OpenCV 3.4.1**.
 
 ## Eigen3
 Required by g2o (see below). Download and install instructions can be found at: http://eigen.tuxfamily.org. **Required at least 3.1.0**.
 
 ## ONNXRuntime
-**Required onnxruntime-linux-x64-gpu-1.16.3** and Modify line 63 of the CmakeLists.txt to the current location of ONNXRuntime library.
+**Required onnxruntime-linux-x64-gpu-1.16.3** and Modify line 63 of the CMakeLists.txt to the current location of ONNXRuntime library.
 
 
 ## ROS (optional)
@@ -53,12 +53,12 @@ make -j12
 
 # Running 
 
-## Euroc-Monocluar:
+## Euroc-Monocular:
 ```
 ./Examples/Monocular/mono_euroc  Vocabulary/voc_binary_tartan_8u_6.yml.gz Examples/Monocular/EuRoC.yaml /media/xiao/data3/slamdataset/euroc/V202 /media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular/EuRoC_TimeStamps/V202.txt
 ```
 
-## Euroc-Monocluar-Inerial:
+## Euroc-Monocular-Inertial:
 
 ```
 ./Examples/Monocular-Inertial/mono_inertial_euroc  Vocabulary/voc_binary_tartan_8u_6.yml.gz Examples/Monocular-Inertial/EuRoC.yaml /media/xiao/data3/slamdataset/euroc/V203 media/xiao/data3/learning-slam/Rover-slam/Examples/Monocular-Inertial/EuRoC_TimeStamps/V203.txt
